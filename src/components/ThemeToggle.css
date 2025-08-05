@@ -1,0 +1,40 @@
+/* --- src/components/ThemeToggle.css --- */
+
+.theme-toggle-btn {
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.98);
+}
+
+/* Dark mode style override */
+.dark .theme-toggle-btn {
+  background: linear-gradient(135deg, #ff6b6b, #f0a500);
+  color: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Optional: Responsive support */
+@media (max-width: 480px) {
+  .theme-toggle-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
